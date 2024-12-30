@@ -29,7 +29,6 @@ export class press_releaseService {
       await this.press_releaseRepository.save(result);
     }
 
-
     return { message: 'press_release created', status: true, press_release: result };
   }
 
@@ -48,7 +47,6 @@ export class press_releaseService {
 
     return { message: 'press_release updated', status: true };
   }
-
 
   // 공지사항 삭제
   async deletepress_release(press_release: press_releaseDto) {
