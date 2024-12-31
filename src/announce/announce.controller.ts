@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, Post, Put, UploadedFile, UseGuards, UseInterceptors } from '@nestjs/common';
-import { AnnounceService } from './Announce.service';
-import { AnnounceDto } from './dto/Announce.dto';
+import { AnnounceService } from './announce.service';
+import { AnnounceDto } from './dto/announce.dto';
 import { JwtAuthGuard } from 'src/guards/jwt-auth.guard';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { File } from 'multer';
